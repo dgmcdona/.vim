@@ -5,5 +5,5 @@
 	path = bundle/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
 [submodule "/home/dgmcdona/.vim/bundle/colorschemes"]
-	path = /home/dgmcdona/.vim/bundle/colorschemes
+	path = bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
