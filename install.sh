@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ln vimrc ~/.vimrc
+ln ~/.vim/vimrc ~/.vimrc
