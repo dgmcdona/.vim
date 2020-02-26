@@ -2,7 +2,7 @@
 
 <h2>Installation</h2>
 
-Clone this repository inside of your home directory using the `--recursive` flag.
+Clone this repository inside of your home directory using the `--recursive` flag; this is necessary for the proper cloning of git submodules.
 
 ```bash
 git clone --recursive git@github.com:dgmcdona/.vim.git
