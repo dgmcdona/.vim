@@ -29,7 +29,6 @@ set foldlevelstart=10	" Open most folds by default
 set foldnestmax=10	" 10 nested fold max
 " Space opens/closes folds
 nnoremap <space> za
-set foldmethod=indent	" fold based on indent level
 " Move vertically by visual line
 nnoremap j gj
 nnoremap k gk
