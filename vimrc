@@ -5,6 +5,11 @@ execute pathogen#infect()
 colorscheme badwolf 	" Set colorscheme
 syntax enable 		" Enable syntax processing
 
+"-----------FILETYPE DETECTION-----"
+filetype on
+filetype plugin on
+filetype indent on
+
 "-----------SPACES AND TABS--------"
 set tabstop=4		" Set spaces per tab
 set softtabstop=4	" Set space per tab when editing; Deleting a tab now deletes 4 spaces.
@@ -48,3 +53,8 @@ nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 " Save session
 nnoremap <leader>s :mksession<CR>
+
+"---------FILETYPE SPECIFIC RULES-------"
+" In makefiles, don't expand tabs to spaces, since actual tab characters are
+" needed, and have indentation at 8 chars to be sure that all indents are tabs
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
