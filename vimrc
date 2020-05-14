@@ -1,8 +1,18 @@
 "----------PLUGINS-----------------"
 execute pathogen#infect() 
+set termguicolors
+let g:lightline = { 'colorscheme': 'nightfly' }
+" ColorStepper Keys
+nmap <F6> <Plug>ColorstepPrev
+nmap <F7> <Plug>ColorstepNext
+nmap <S-F7> <Plug>ColorstepReload
+
+"-----------PERSISTENT UNDO--------"
+set undodir=~/.vim/undodir
+set undofile
 
 "-----------COLORS-----------------"
-colorscheme badwolf 	" Set colorscheme
+colorscheme nightfly " Set colorscheme
 syntax enable 		" Enable syntax processing
 
 "-----------FILETYPE DETECTION-----"
@@ -54,7 +64,20 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 " Save session
 nnoremap <leader>s :mksession<CR>
 
+"---------POWERLINE SETUP---------------"
+set rtp+=/usr/local/lib/python3.7/site-packages/powerline/bindings/vim
+set laststatus=2
+set t_Co=256
+
 "---------FILETYPE SPECIFIC RULES-------"
 " In makefiles, don't expand tabs to spaces, since actual tab characters are
 " needed, and have indentation at 8 chars to be sure that all indents are tabs
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
+"---------TMUX CONFIGURATION------------"
+set background=dark
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+endif
