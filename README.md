@@ -1,5 +1,4 @@
 <h1>My .vimrc and plugins</h1>
-
 <h2>Installation</h2>
 
 Clone this repository inside of your home directory using the `--recursive` flag; this is necessary for the proper cloning of git submodules.
