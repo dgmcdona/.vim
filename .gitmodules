@@ -7,9 +7,6 @@
 [submodule "/home/dgmcdona/.vim/bundle/colorschemes"]
 	path = bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
-[submodule "bundle/vim-colorstepper"]
-	path = bundle/vim-colorstepper
-	url = https://github.com/seanmceligot/vim-colorstepper.git
 [submodule "/Users/davidmcdonald/.vim/bundle/auto-pairs"]
 	path = /Users/davidmcdonald/.vim/bundle/auto-pairs
 	url = git://github.com/jiangmiao/auto-pairs.git
