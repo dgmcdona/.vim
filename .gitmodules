@@ -13,3 +13,12 @@
 [submodule "/Users/davidmcdonald/.vim/bundle/auto-pairs"]
 	path = /Users/davidmcdonald/.vim/bundle/auto-pairs
 	url = git://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "bundle/vim-nightfly-guicolors"]
+	path = bundle/vim-nightfly-guicolors
+	url = https://github.com/bluz71/vim-nightfly-guicolors.git
+[submodule "bundle/vimtex"]
+	path = bundle/vimtex
+	url = https://github.com/lervag/vimtex.git
