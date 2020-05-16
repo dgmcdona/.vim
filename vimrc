@@ -1,5 +1,9 @@
 "--------TERMINAL COLORS-----------"
-set termguicolors
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 "----------PLUGINS-----------------"
 execute pathogen#infect() 
 
@@ -21,7 +25,7 @@ set expandtab		" Convert tab into spaces
 set number 		" Show line numbers
 set showcmd		" Show command in bottom bar
 set cursorline		" Highlight current line
-filetype indent on	" Load filetype specific indent files
+" filetype indent on	" Load filetype specific indent files
 set wildmenu		" Visual autocomplete for command menu
 set lazyredraw		" Redraw only when we need to
 set showmatch		" highlight matching [{()}]
@@ -60,3 +64,4 @@ nnoremap <leader>s :mksession<CR>
 " In makefiles, don't expand tabs to spaces, since actual tab characters are
 " needed, and have indentation at 8 chars to be sure that all indents are tabs
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+autocmd FileType java set expandtab tabstop=2 softtabstop=2 noexpandtab shiftwidth=2
